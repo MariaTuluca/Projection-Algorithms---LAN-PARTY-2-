@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include<math.h>
 // acest header conține apeluri de funcții ajutătoare pentru task-ul acesta
 #define numberOfNodes 32 
+#define parameter 0.15
 
 typedef struct graphNode
 {   
@@ -42,4 +43,6 @@ void deleteQueue(Queue *q);
 
 void scrieMatriceAdiacenta(Graph *TeamsGraph, FILE *date_output);
 
-void creareMeciuriTurneu(Graph *TeamsGraph, FILE *date_output);
+void calculeazaPrestigiu(Graph *TeamsGraph, Queue *order, FILE *output);
+
+void creareMeciuriTurneu(Graph *TeamsGraph, FILE *date_output, FILE *date_output2);

@@ -8,10 +8,14 @@ int main(int argc, char *argv[])
         printf("Usage: %s <input_file> <output_file>\n", argv[0]);
         return 1;
     }
+    
     char *input = argv[1];
     char *output = argv[2];
+    char *output2 = argv[3];
 
-    FILE *date_input = fopen(input, "rt"), *date_output = fopen(output, "wt");
+    FILE *date_input = fopen(input, "rt");
+    FILE *date_output = fopen(output, "wt");
+    FILE *date_output2 = fopen(output2, "wt");
     if(date_input == NULL)
     {printf("Eroare la deschidere fișier citire!");
      exit(1);}
@@ -21,11 +25,17 @@ int main(int argc, char *argv[])
     citireDate(&TeamsGraph, date_input);
     fclose(date_input);
 
-    if(date_output == NULL)
+    if(date_output == NULL && date_output2 == NULL)
     {printf("Eroare la deschidere fișier afișare!");
      exit(1);}
-
-    creareMeciuriTurneu(TeamsGraph, date_output);
-
+    
+    creareMeciuriTurneu(TeamsGraph, date_output, date_output2);
     fclose(date_output);
+    fclose(date_output2);
+
+    for(int i=0; i<TeamsGraph->V; i++)
+        free(TeamsGraph->nodes[i].teamName);
+    
+    free(TeamsGraph);
+    return 0;
 }
