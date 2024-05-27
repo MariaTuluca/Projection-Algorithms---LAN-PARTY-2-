@@ -15,9 +15,5 @@ Proiectul este constituit din mai multe fișiere cu diferite funcționalități:
   
 - functii.c și functii.h -> fișierul sursă și biblioteca aferentă cu structuri specifice cozilor, grafurilor și definițiile și prototipurile funcțiilor utilizate în program.
 
-- acest README cu descrierea temei.
-
-- un Makefile, fișierul de configurare a compilării.
-
 Licență
 Acest program este distribuit sub Licența MIT.
