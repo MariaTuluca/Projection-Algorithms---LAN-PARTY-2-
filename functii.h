@@ -31,13 +31,13 @@ typedef struct Queue{
     QueueNode *front, *rear;
 }Queue;
 
-void citireDate(Graph **TeamsGraph, FILE *date_input);
+void citireDate(Graph *TeamsGraph, FILE *date_input);
 
 Queue *createQueue();
 
-void enQueue(Queue *q, GraphNode *node);
+void enQueue(Queue *q, GraphNode node);
 
-GraphNode *deQueue(Queue *q);
+GraphNode deQueue(Queue *q);
 
 void deleteQueue(Queue *q);
 
