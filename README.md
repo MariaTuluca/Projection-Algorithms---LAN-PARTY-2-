@@ -1,6 +1,6 @@
-Descrierea temei 2 - LAN PARTY 2024
+Project 2 - LAN PARTY 2024
 
-Tema mea este concepută pentru a gestiona un turneu tip LanParty cu 32 de echipe, cu generare și procesare de meciuri, determinare câștigător și afișare prestigiu pentru fiecare echipă.
+Proiectul meu este conceput pentru a gestiona un turneu tip LanParty cu 32 de echipe, cu generare și procesare de meciuri, determinare câștigător și afișare prestigiu pentru fiecare echipă.
 
 Structura proiectului
 
